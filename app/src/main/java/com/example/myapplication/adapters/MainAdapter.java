@@ -19,11 +19,11 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         this.movies = movies;
     }
 
-    //@Override
-    //public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        //View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.movie_item, parent, false);
-        //return new ViewHolder(view);
-    //}
+    @Override
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.movie_item, parent, false);
+        return new ViewHolder(view);
+    }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {

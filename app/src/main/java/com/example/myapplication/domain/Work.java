@@ -10,13 +10,16 @@ public class Work {
     private String school_class;
     private String author;
 
-    public Work(String comment, List<String> images_url, String lesson_name, String school, String school_class, String author){
+    private String date;
+
+    public Work(String comment, List<String> images_url, String lesson_name, String school, String school_class, String author, String date){
         this.comment = comment;
         this.images_url = images_url;
         this.lesson_name = lesson_name;
         this.school = school;
         this.school_class = school_class;
         this.author = author;
+        this.date = date;
     }
 
 
@@ -43,5 +46,9 @@ public class Work {
 
     public String getSchool_class() {
         return school_class;
+    }
+
+    public String getDate() {
+        return date;
     }
 }
